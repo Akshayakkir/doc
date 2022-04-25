@@ -4,5 +4,12 @@ Booting Process RHEL 8
 
 2. MBR : MBR stands for Master Boot Record and is responsible for loading and executing the GRUB boot loader. The MBR is located in the 1st sector of the bootable disk, which is typically /dev/hda or /dev/sda,depending on your hardware. the MBR also contains information about GRUB, or LILO in very old systems.
 
-3. GRUB : 
+3. GRUB : Grub stands for Grand Unified bootloader, It has a simple menu where you can select some options. if you have multiples kernal images installed, you can  use your keyboard to select the one you want your system to boot with. By default,the latest kernal image is selected. You can find GRUB configuration file at /boot/grub/grub.conf
+
+4. Kernal : The kernal is referred to as the core of any operating system, it has complete control over everthing in your system. in this stage of boot process, the kernal that was select by GRUB first mount the root file system that specified in grub.conf file. then it executes the /sbin/init program, which is always the first program to be executed. you can confirm this with process id (PID), which should always be 1. the kernal then establishes a temporary root file system using initrd (init RAM disk until the real file system is mounted.
+
+5. /sbin/init : 
+
+
+
 
