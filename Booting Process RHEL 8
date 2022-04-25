@@ -1,0 +1,8 @@
+Booting Process RHEL 8
+
+1. BIOS : BIOS stands for Basic Input output system, the BIOS loads and executes the Master Boot Record (MBR) boot loader. when you first turn on your computer, the BIOS first performs some integrity checks of the HDD and SSD. Then, the BIOS searches for, loads and executes the boot loader program, which can be found in the Master boot Record(MBR). Once the boot loader program is detected,its then loaded into memory and the BIOS gives control of the system to it.
+
+2. MBR : MBR stands for Master Boot Record and is responsible for loading and executing the GRUB boot loader. The MBR is located in the 1st sector of the bootable disk, which is typically /dev/hda or /dev/sda,depending on your hardware. the MBR also contains information about GRUB, or LILO in very old systems.
+
+3. GRUB : 
+
